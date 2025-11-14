@@ -10,7 +10,7 @@ import arcpy
 # -------------------------------------------------------------------
 
 # Path to your SDE feature class
-fc = r"x.sde\My.DBO.Address"
+fc = r"x.sde\My.DBO.Hydrants"
 
 # Field to be fixed
 field_name = "HYDRANT_ID"
@@ -86,3 +86,4 @@ except Exception as e:
     edit.stopOperation()
     edit.stopEditing(False)
     arcpy.AddError(f"❌ Error: {e}")
+
