@@ -1,4 +1,4 @@
-# Data Cleanup-Script-for-Duplicate-Asset-IDs-in-Enterprise-Geodatabases
+# Duplicate Data Cleanup-Script-for-Duplicate-Asset-IDs-in-Enterprise-Geodatabases
 
 * The script can be run from **ArcGIS Pro Notebook, Toolbox (.pyt), VS Code, or any Python environment with arcpy**
 * It is intended to be used **one time** (or occasionally) to clean existing duplicates
@@ -10,7 +10,7 @@ Everything is phrased clearly, professionally, and applicable to *any* feature l
 
 # 🔧 FixDuplicateUniqueIDs
 
-### One-Time Cleanup Tool for Duplicate Asset IDs in Enterprise Geodatabases (ArcGIS SDE)
+### Duplicate Data Cleanup Tool for Duplicate Asset IDs in Enterprise Geodatabases (ArcGIS SDE)
 
 This script detects and fixes **duplicate ID values** in any SDE feature class.
 Although the example uses `HYDRANT_ID`, the script is fully generic and works for ANY unique ID field such as:
@@ -23,7 +23,6 @@ Although the example uses `HYDRANT_ID`, the script is fully generic and works fo
 * `PROJECT_ID`
 * Custom primary keys used by Utilities, Engineering, Addressing, Public Works, etc.
 
-This tool is typically run **once** to clean existing data.
 ---
 
 ## 🧠 When To Use This Tool
