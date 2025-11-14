@@ -13,7 +13,7 @@ import arcpy
 fc = r"x.sde\My.DBO.Hydrants"
 
 # Field to be fixed
-field_name = "HYDRANT_ID"
+field_name = "HYDRANT_ID" # hydrant id is just number in my case . You can modify code for string eg HYD-787
 
 # Workspace = SDE connection used for arcpy.da.Editor
 workspace = r"x.sde"
@@ -86,4 +86,5 @@ except Exception as e:
     edit.stopOperation()
     edit.stopEditing(False)
     arcpy.AddError(f"❌ Error: {e}")
+
 
