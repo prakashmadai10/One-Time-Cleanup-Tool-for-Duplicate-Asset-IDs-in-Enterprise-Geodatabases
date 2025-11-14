@@ -2,7 +2,7 @@
 
 * The script can be run from **ArcGIS Pro Notebook, Toolbox (.pyt), VS Code, or any Python environment with arcpy**
 * It is intended to be used **one time** (or occasionally) to clean existing duplicates
-* After cleanup, users should enable a **GNextSequenceValue ('Test')** to ensure future features always get a unique ID automatically
+* After cleanup, users should enable a **NextSequenceValue ('Test')** to ensure future features always get a unique ID automatically
 
 Everything is phrased clearly, professionally, and applicable to *any* feature layer.
 
@@ -24,26 +24,6 @@ Although the example uses `HYDRANT_ID`, the script is fully generic and works fo
 * Custom primary keys used by Utilities, Engineering, Addressing, Public Works, etc.
 
 This tool is typically run **once** to clean existing data.
-After cleanup, you can enable **GENERATE_ID attribute rules** so future features always get a unique ID automatically.
-
----
-
-## 🚀 Where You Can Run This Script
-
-This script works in **all ArcGIS Python environments**, including:
-
-### ✔ ArcGIS Pro Notebook
-
-### ✔ ArcGIS Pro Toolbox (as a script tool or .pyt)
-
-### ✔ ArcGIS Server Python environment
-
-### ✔ VS Code running arcpy (Pro/Server conda environment)
-
-### ✔ Any scheduled Python job (Windows Task Scheduler, Jenkins, etc.)
-
-If your feature layer currently contains duplicate IDs → **run this script once** to fix all duplicates safely.
-
 ---
 
 ## 🧠 When To Use This Tool
@@ -121,6 +101,7 @@ Once all duplicates are removed, enable this attribute rule:
 
 ```
 NextSequenceValue ('Test')
+URL : https://support.esri.com/en-us/knowledge-base/how-to-add-auto-sequential-values-using-attribute-rules-000024533
 ```
 
 This ensures:
@@ -139,8 +120,6 @@ Attribute rule = **permanent prevention**
 ```python
 field_name = "HYDRANT_ID"  # Replace with your field (ASSET_ID, ADDRESS_ID, etc.)
 ```
-
 Replace this with the ID field used in your dataset.
 
 ---
-
