@@ -1,4 +1,4 @@
-# One-Time-Cleanup-Tool-for-Duplicate-Asset-IDs-in-Enterprise-Geodatabases
+# Data Cleanup-Script-for-Duplicate-Asset-IDs-in-Enterprise-Geodatabases
 
 * The script can be run from **ArcGIS Pro Notebook, Toolbox (.pyt), VS Code, or any Python environment with arcpy**
 * It is intended to be used **one time** (or occasionally) to clean existing duplicates
